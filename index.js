@@ -27,7 +27,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 const prefix = '.';
-const ownerNumber = ['94776121326'];
+const ownerNumber = ['94772915479'];
 const credsPath = path.join(__dirname, '/auth_info_baileys/creds.json');
 
 async function ensureSessionFile() {
@@ -39,7 +39,7 @@ async function ensureSessionFile() {
 
     console.log("🔄 creds.json not found. Downloading session from MEGA...");
 
-    const sessdata = config.SESSION_ID;
+    const sessdata = config.SESSION_ID;hi
     const filer = File.fromURL(`https://mega.nz/file/${sessdata}`);
 
     filer.download((err, data) => {
